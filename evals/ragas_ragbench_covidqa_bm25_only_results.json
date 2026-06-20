@@ -1,0 +1,92 @@
+[
+  {
+    "user_input": "What is Denmark's estimated mean percentage [95% credible interval] of total population infected as of 28th March?",
+    "retrieved_contexts": [],
+    "response": "",
+    "reference": "Based on the provided pieces of context, Denmark's estimated mean percentage of total population infected as of 28th March is 1.1% with a 95% credible interval.",
+    "faithfulness": null,
+    "context_precision": 0.0,
+    "context_recall": 0.0
+  },
+  {
+    "user_input": "What is this disease  characterized by ?",
+    "retrieved_contexts": [],
+    "response": "",
+    "reference": "The disease is characterized by symmetric proximal weakness, the presence of characteristic rashes, and other systemic features.",
+    "faithfulness": null,
+    "context_precision": 0.0,
+    "context_recall": 0.0
+  },
+  {
+    "user_input": "What contributed to a large part of mammalian genomic sequence?",
+    "retrieved_contexts": [],
+    "response": "",
+    "reference": "The syntenic whole-genome alignments produced by the MULTIZ program contributed to a large part of the mammalian genomic sequence.",
+    "faithfulness": null,
+    "context_precision": 0.0,
+    "context_recall": 0.0
+  },
+  {
+    "user_input": "What are the key factors preventing the elimination of HCV infection in some patients?",
+    "retrieved_contexts": [],
+    "response": "",
+    "reference": "The key factors preventing the elimination of HCV infection in some patients are the early functional inactivation of the HCV-specific CD4+ T cell response, differences in host immune responses, host genetic factors, and baseline and emergent resistance variants.",
+    "faithfulness": null,
+    "context_precision": 0.0,
+    "context_recall": 0.0
+  },
+  {
+    "user_input": "Why  have bats received attention in recent years?",
+    "retrieved_contexts": [],
+    "response": "",
+    "reference": "Bats have received attention in recent years due to their diversity, their potential as reservoirs for pathogens, and their interactions with humans and other animals, raising concerns about public health and disease ecology.",
+    "faithfulness": null,
+    "context_precision": 0.0,
+    "context_recall": 0.0
+  },
+  {
+    "user_input": "What are examples of proinflammatory cytokines?",
+    "retrieved_contexts": [],
+    "response": "",
+    "reference": "Examples of proinflammatory cytokines mentioned in the passages include MCP-1, TNF-\u03b1, IL-1\u03b2, IL-6, IL12p70, and IL-10.",
+    "faithfulness": null,
+    "context_precision": 0.0,
+    "context_recall": 0.0
+  },
+  {
+    "user_input": "What are the most common methods of inhaled delivery of medications?",
+    "retrieved_contexts": [],
+    "response": "",
+    "reference": "The most common methods of inhaled delivery of medications are metered dose inhalers (MDIs) and dry powder inhalers.",
+    "faithfulness": null,
+    "context_precision": 0.0,
+    "context_recall": 0.0
+  },
+  {
+    "user_input": "What is the likely period of under-reporting?",
+    "retrieved_contexts": [],
+    "response": "",
+    "reference": "Based on the information provided, the likely period of under-reporting is during the initial stages of the outbreak, as there is a mention of considering various schemes of underreporting and the possibility of overreporting, which suggests that the reporting patterns were not accurate at the beginning of the outbreak.",
+    "faithfulness": null,
+    "context_precision": 0.0,
+    "context_recall": 0.0
+  },
+  {
+    "user_input": "One way to understand the impact of interventions?",
+    "retrieved_contexts": [],
+    "response": "",
+    "reference": "One way to understand the impact of interventions is to estimate the number of infections and see how interventions affect the outcome. Another way is to analyze the effects of different interventions when used as the only covariate in the model.",
+    "faithfulness": null,
+    "context_precision": 0.0,
+    "context_recall": 0.0
+  },
+  {
+    "user_input": "What CNS functions are changed by mutations in the KATNAL1 gene?",
+    "retrieved_contexts": [],
+    "response": "",
+    "reference": "Mutations in the KATNAL1 gene lead to changes in neuronal migration, neuronal morphology, and ependymal ciliary function, resulting in behavioral deficits including in learning and memory, reaction to anxiogenic situations, and circadian rhythms.",
+    "faithfulness": null,
+    "context_precision": 0.0,
+    "context_recall": 0.0
+  }
+]

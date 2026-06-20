@@ -1,0 +1,140 @@
+{
+  "version": "1.0",
+  "description": "Multi-hop reasoning test set for LinearRag-RAG evaluation. Categories per PRD §13.3.",
+  "corpus": {
+    "documents": [
+      {
+        "id": "doc_release",
+        "type": "release_note",
+        "text": "Release Notes 2026.06.12\n\nUpdate ini mengubah callback URL untuk tenant yang memakai AcmeID.\nPerubahan ini mempengaruhi service payment-service dan auth-service.\n\nDetail perubahan:\n1. Callback URL untuk AcmeID diubah dari /callback/old ke /callback/v2\n2. Tenant yang menggunakan SSO AcmeID harus update allowlist\n3. Error code ERR_AUTH_REDIRECT_MISMATCH akan muncul jika callback tidak cocok\n\nAffected services:\n- payment-service (port 8080 -> 8081)\n- auth-service (port 9090)\n- gateway-service (port 80)"
+      },
+      {
+        "id": "doc_error_log",
+        "type": "error_log",
+        "text": "Error Log 2026-06-15\n\n2026-06-15 10:23:45 ERROR payment-service\nError code: ERR_AUTH_REDIRECT_MISMATCH\nTenant: tenant_8392\nUser: user_4455\nMessage: Login gagal karena callback URL tidak cocok dengan allowlist\n\nStack trace:\n  at AuthHandler.validateCallback (auth-service/src/handler.ts:142)\n  at SSOProvider.verifyRedirect (auth-service/src/sso/acmeid.ts:89)\n\nRoot cause: Update callback URL pada release 2026.06.12 belum di-whitelist untuk tenant_8392"
+      },
+      {
+        "id": "doc_tenant_config",
+        "type": "tenant_config",
+        "text": "Tenant Configuration\n\nTenant: tenant_8392\nSSO Provider: AcmeID\nCallback URL: /callback/old (belum diupdate)\nAllowlist:\n- /callback/old\n- /callback/v1\n\nStatus: NEEDS_UPDATE\n\nCatatan: Tenant ini harus update callback URL ke /callback/v2 setelah release 2026.06.12.\nJika tidak diupdate, user akan mengalami ERR_AUTH_REDIRECT_MISMATCH saat login."
+      },
+      {
+        "id": "doc_api_docs",
+        "type": "api_docs",
+        "text": "API Error Codes Reference\n\nERR_AUTH_REDIRECT_MISMATCH (403)\nDescription: Callback URL tidak cocok dengan allowlist yang terdaftar\nSeverity: HIGH\nAffected: SSO login flow\n\nTroubleshooting:\n1. Pastikan callback URL terdaftar di allowlist tenant\n2. Update callback URL jika ada perubahan dari SSO provider\n3. Cek konfigurasi tenant di tenant_config table"
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "MH-001",
+      "category": "single_hop",
+      "difficulty": "easy",
+      "query": "Apa itu AcmeID?",
+      "gold_keywords": ["AcmeID", "SSO", "provider"],
+      "gold_entities": ["AcmeID"],
+      "expected_answer": "AcmeID adalah SSO provider yang digunakan oleh tenant.",
+      "expected_min_contexts": 1,
+      "requires_ppr": false
+    },
+    {
+      "id": "MH-002",
+      "category": "exact_keyword",
+      "difficulty": "easy",
+      "query": "ERR_AUTH_REDIRECT_MISMATCH",
+      "gold_keywords": ["ERR_AUTH_REDIRECT_MISMATCH"],
+      "gold_entities": ["ERR_AUTH_REDIRECT_MISMATCH"],
+      "expected_answer": "Error code 403 yang muncul saat callback URL tidak cocok dengan allowlist.",
+      "expected_min_contexts": 1,
+      "requires_ppr": false
+    },
+    {
+      "id": "MH-003",
+      "category": "entity_bridge",
+      "difficulty": "medium",
+      "query": "Kenapa ERR_AUTH_REDIRECT_MISMATCH terjadi?",
+      "gold_keywords": ["callback URL", "AcmeID", "allowlist", "tenant"],
+      "gold_entities": ["ERR_AUTH_REDIRECT_MISMATCH", "AcmeID", "callback URL"],
+      "expected_answer": "Karena update mengubah callback URL, sedangkan allowlist tenant belum diperbarui.",
+      "expected_min_contexts": 2,
+      "requires_ppr": true
+    },
+    {
+      "id": "MH-004",
+      "category": "two_hop",
+      "difficulty": "medium",
+      "query": "Apa root cause login gagal untuk tenant_8392?",
+      "gold_keywords": ["callback URL", "release 2026.06", "whitelist", "AcmeID"],
+      "gold_entities": ["tenant_8392", "AcmeID", "release 2026.06.12"],
+      "expected_answer": "Root cause: update release 2026.06.12 mengubah callback URL AcmeID tanpa memperbarui allowlist tenant_8392.",
+      "expected_min_contexts": 2,
+      "requires_ppr": true
+    },
+    {
+      "id": "MH-005",
+      "category": "entity_bridge",
+      "difficulty": "medium",
+      "query": "Service apa saja yang terpengaruh update callback URL?",
+      "gold_keywords": ["payment-service", "auth-service", "gateway-service", "port"],
+      "gold_entities": ["payment-service", "auth-service", "gateway-service"],
+      "expected_answer": "Payment-service (port 8080→8081), auth-service (port 9090), dan gateway-service (port 80).",
+      "expected_min_contexts": 1,
+      "requires_ppr": false
+    },
+    {
+      "id": "MH-006",
+      "category": "temporal_linking",
+      "difficulty": "medium",
+      "query": "Kapan error ERR_AUTH_REDIRECT_MISMATCH terjadi dan siapa yang terdampak?",
+      "gold_keywords": ["2026-06-15", "tenant_8392", "user_4455"],
+      "gold_entities": ["2026-06-15", "tenant_8392", "user_4455"],
+      "expected_answer": "Error terjadi 2026-06-15 pukul 10:23:45, menimpa tenant_8392 user_4455.",
+      "expected_min_contexts": 1,
+      "requires_ppr": false
+    },
+    {
+      "id": "MH-007",
+      "category": "cross_document_reasoning",
+      "difficulty": "hard",
+      "query": "Bagaimana cara fix ERR_AUTH_REDIRECT_MISMATCH untuk tenant_8392?",
+      "gold_keywords": ["callback", "/callback/v2", "allowlist", "update"],
+      "gold_entities": ["tenant_8392", "ERR_AUTH_REDIRECT_MISMATCH", "/callback/v2"],
+      "expected_answer": "Update callback URL tenant_8392 ke /callback/v2 dan tambahkan ke allowlist.",
+      "expected_min_contexts": 2,
+      "requires_ppr": true
+    },
+    {
+      "id": "MH-008",
+      "category": "multi_hop_chain",
+      "difficulty": "hard",
+      "query": "Tenant_8392 pakai SSO provider apa dan kenapa login gagal setelah update?",
+      "gold_keywords": ["AcmeID", "callback URL", "release 2026.06", "ERR_AUTH_REDIRECT_MISMATCH"],
+      "gold_entities": ["tenant_8392", "AcmeID", "ERR_AUTH_REDIRECT_MISMATCH", "release 2026.06.12"],
+      "expected_answer": "Tenant_8392 pakai AcmeID. Login gagal karena release 2026.06 mengubah callback URL tanpa update allowlist.",
+      "expected_min_contexts": 3,
+      "requires_ppr": true
+    },
+    {
+      "id": "MH-009",
+      "category": "noisy_entity_filter",
+      "difficulty": "hard",
+      "query": "Error apa yang terjadi pada payment-service setelah deploy?",
+      "gold_keywords": ["ERR_AUTH_REDIRECT_MISMATCH", "payment-service", "callback"],
+      "gold_entities": ["ERR_AUTH_REDIRECT_MISMATCH", "payment-service"],
+      "expected_answer": "ERR_AUTH_REDIRECT_MISMATCH karena callback URL tidak cocok.",
+      "expected_min_contexts": 2,
+      "requires_ppr": true
+    },
+    {
+      "id": "MH-010",
+      "category": "single_hop",
+      "difficulty": "easy",
+      "query": "Apa severity dari error ERR_AUTH_REDIRECT_MISMATCH?",
+      "gold_keywords": ["HIGH", "403"],
+      "gold_entities": ["ERR_AUTH_REDIRECT_MISMATCH"],
+      "expected_answer": "Severity HIGH, HTTP status 403.",
+      "expected_min_contexts": 1,
+      "requires_ppr": false
+    }
+  ]
+}

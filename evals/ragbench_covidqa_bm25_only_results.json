@@ -1,0 +1,78 @@
+{
+  "timestamp": "2026-06-19T14:11:56Z",
+  "topic": "covidqa",
+  "mode": "bm25_only",
+  "collection_id": "ragbench_covidqa",
+  "details": [
+    {
+      "question": "What is Denmark's estimated mean percentage [95% credible interval] of total population infected as of 28th March?",
+      "answer": "",
+      "contexts": [],
+      "ground_truth": "Based on the provided pieces of context, Denmark's estimated mean percentage of total population infected as of 28th March is 1.1% with a 95% credible interval.",
+      "latency_ms": 26.509805000387132
+    },
+    {
+      "question": "What is this disease  characterized by ?",
+      "answer": "",
+      "contexts": [],
+      "ground_truth": "The disease is characterized by symmetric proximal weakness, the presence of characteristic rashes, and other systemic features.",
+      "latency_ms": 11.441214999649674
+    },
+    {
+      "question": "What contributed to a large part of mammalian genomic sequence?",
+      "answer": "",
+      "contexts": [],
+      "ground_truth": "The syntenic whole-genome alignments produced by the MULTIZ program contributed to a large part of the mammalian genomic sequence.",
+      "latency_ms": 9.645479998653173
+    },
+    {
+      "question": "What are the key factors preventing the elimination of HCV infection in some patients?",
+      "answer": "",
+      "contexts": [],
+      "ground_truth": "The key factors preventing the elimination of HCV infection in some patients are the early functional inactivation of the HCV-specific CD4+ T cell response, differences in host immune responses, host genetic factors, and baseline and emergent resistance variants.",
+      "latency_ms": 11.755733999962104
+    },
+    {
+      "question": "Why  have bats received attention in recent years?",
+      "answer": "",
+      "contexts": [],
+      "ground_truth": "Bats have received attention in recent years due to their diversity, their potential as reservoirs for pathogens, and their interactions with humans and other animals, raising concerns about public health and disease ecology.",
+      "latency_ms": 12.459228999432526
+    },
+    {
+      "question": "What are examples of proinflammatory cytokines?",
+      "answer": "",
+      "contexts": [],
+      "ground_truth": "Examples of proinflammatory cytokines mentioned in the passages include MCP-1, TNF-\u03b1, IL-1\u03b2, IL-6, IL12p70, and IL-10.",
+      "latency_ms": 12.482226000429364
+    },
+    {
+      "question": "What are the most common methods of inhaled delivery of medications?",
+      "answer": "",
+      "contexts": [],
+      "ground_truth": "The most common methods of inhaled delivery of medications are metered dose inhalers (MDIs) and dry powder inhalers.",
+      "latency_ms": 11.808301000201027
+    },
+    {
+      "question": "What is the likely period of under-reporting?",
+      "answer": "",
+      "contexts": [],
+      "ground_truth": "Based on the information provided, the likely period of under-reporting is during the initial stages of the outbreak, as there is a mention of considering various schemes of underreporting and the possibility of overreporting, which suggests that the reporting patterns were not accurate at the beginning of the outbreak.",
+      "latency_ms": 9.235371000613668
+    },
+    {
+      "question": "One way to understand the impact of interventions?",
+      "answer": "",
+      "contexts": [],
+      "ground_truth": "One way to understand the impact of interventions is to estimate the number of infections and see how interventions affect the outcome. Another way is to analyze the effects of different interventions when used as the only covariate in the model.",
+      "latency_ms": 8.662975000333972
+    },
+    {
+      "question": "What CNS functions are changed by mutations in the KATNAL1 gene?",
+      "answer": "",
+      "contexts": [],
+      "ground_truth": "Mutations in the KATNAL1 gene lead to changes in neuronal migration, neuronal morphology, and ependymal ciliary function, resulting in behavioral deficits including in learning and memory, reaction to anxiogenic situations, and circadian rhythms.",
+      "latency_ms": 8.514060000379686
+    }
+  ]
+}

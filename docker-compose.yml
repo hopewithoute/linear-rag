@@ -1,0 +1,67 @@
+version: '3.8'
+
+services:
+  linear_rag-rag:
+    build: .
+    ports:
+      - "8002:8002"
+    environment:
+      - FRUGAL_DATABASE_URL=postgresql+asyncpg://postgres:gas12kilo@db:5432/linear_rag_db
+      - FRUGAL_API_KEY=${FRUGAL_API_KEY:-test-secret-key}
+      - EMBEDDING_BASE_URL=http://embedding-sidecar:8766/v1
+      - EMBEDDING_API_KEY=${EMBEDDING_API_KEY:-dev-secret-key}
+      - EMBEDDING_MODEL=local-embedding-model
+      - EMBEDDING_DIMENSIONS=1024
+      - GLINER_MODEL=/models/gliner_multi-v2.1
+      - SNAPSHOT_DIR=/app/snapshots
+    volumes:
+      - linear_rag-snapshots:/app/snapshots
+    depends_on:
+      db:
+        condition: service_healthy
+      embedding-sidecar:
+        condition: service_started
+    restart: unless-stopped
+
+  embedding-sidecar:
+    build: ../embedding-sidecar
+    ports:
+      - "8766:8766"
+    environment:
+      - EMBEDDING_MODEL_PATH=/models/qwen3-embedding-0.6b-gguf/Qwen3-Embedding-0.6B-Q8_0.gguf
+      - EMBEDDING_API_KEY=${EMBEDDING_API_KEY:-dev-secret-key}
+      - EMBEDDING_GPU_LAYERS=999
+    volumes:
+      - ../.models:/models:ro
+    restart: unless-stopped
+
+  gliner-sidecar:
+    build: ../gliner-sidecar
+    ports:
+      - "8767:8767"
+    environment:
+      - GLINER_MODEL=/models/gliner_multi-v2.1
+      - GLINER_SIDECAR_API_KEY=${GLINER_SIDECAR_API_KEY:-dev-secret-key}
+    volumes:
+      - ../.models:/models:ro
+    restart: unless-stopped
+
+  db:
+    image: pgvector/pgvector:pg16
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-gas12kilo}
+      - POSTGRES_DB=linear_rag_db
+    volumes:
+      - linear_rag-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  linear_rag-pgdata:
+  linear_rag-snapshots:

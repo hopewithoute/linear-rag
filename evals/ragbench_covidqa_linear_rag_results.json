@@ -1,0 +1,284 @@
+{
+  "timestamp": "2026-06-20T00:58:26Z",
+  "topic": "covidqa",
+  "mode": "linear_rag",
+  "metrics": {
+    "total_queries": 10,
+    "hit@5": 0.5,
+    "mrr": 0.2783333333333334,
+    "recall": 0.16743697478991598,
+    "avg_latency_ms": 728.4734803000902
+  },
+  "details": [
+    {
+      "question": "What is Denmark's estimated mean percentage [95% credible interval] of total population infected as of 28th March?",
+      "answer": "",
+      "contexts": [
+        "Title: Dublin Airport\nDublin Airport, (Irish: Aerfort Bhaile \u00c1tha Cliath ) (IATA: DUB,\u00a0ICAO: EIDW) , is an international airport serving Dublin, the capital city of Ireland.\n It is operated by DAA (formerly Dublin Airport Authority).\n The airport is located 5.4 nmi north of Dublin in Collinstown, Fingal.\n In 2016, 27.9 million passengers passed through the airport, making it the airport's busiest year on record.\n It is the 15th busiest airport in Europe, and is also the busiest of the state's airports by total passenger traffic.\n It has the greatest traffic levels on the island of Ireland, followed by Belfast International Airport, County Antrim.",
+        "Title: Dublin Airport\nDublin Airport, (Irish: Aerfort Bhaile \u00c1tha Cliath ) (IATA: DUB,\u00a0ICAO: EIDW) , is an international airport serving Dublin, the capital city of Ireland.\n It is operated by DAA (formerly Dublin Airport Authority).\n The airport is located 5.4 nmi north of Dublin in Collinstown, Fingal.\n In 2016, 27.9 million passengers passed through the airport, making it the airport's busiest year on record.\n It is the 15th busiest airport in Europe, and is also the busiest of the state's airports by total passenger traffic.\n It has the greatest traffic levels on the island of Ireland, followed by Belfast International Airport, County Antrim.",
+        "Title: Dade County, Georgia\nDade County is a county in the U.S. state of Georgia.\n It occupies the northwest corner of Georgia, and the county's own northwest corner is the westernmost point in the state.\n As of the 2010 census, the population is 16,633.\n The county seat and only incorporated municipality is Trenton.",
+        "Title: Dubai International Airport\nDubai International Airport (IATA: DXB,\u00a0ICAO: OMDB) (Arabic: \u0645\u0637\u0627\u0631 \u062f\u0628\u064a \u0627\u0644\u062f\u0648\u0644\u064a\u200e \u200e ) is the primary international airport serving Dubai, United Arab Emirates and is the world's busiest airport by international passenger traffic.\n It is also the 3rd busiest airport in the world by passenger traffic, the 6th busiest cargo airport in world, the busiest airport for Airbus A380 and Boeing 777 movements, and the busiest airport in the world operating with only two runways.\n In 2016, DXB handled 83.6 million passengers, 2.59 million tonnes of cargo and registered 418,220 aircraft movements.",
+        "Title: Dubai International Airport\nDubai International Airport (IATA: DXB,\u00a0ICAO: OMDB) (Arabic: \u0645\u0637\u0627\u0631 \u062f\u0628\u064a \u0627\u0644\u062f\u0648\u0644\u064a\u200e \u200e ) is the primary international airport serving Dubai, United Arab Emirates and is the world's busiest airport by international passenger traffic.\n It is also the 3rd busiest airport in the world by passenger traffic, the 6th busiest cargo airport in world, the busiest airport for Airbus A380 and Boeing 777 movements, and the busiest airport in the world operating with only two runways.\n In 2016, DXB handled 83.6 million passengers, 2.59 million tonnes of cargo and registered 418,220 aircraft movements."
+      ],
+      "ground_truth": "Based on the provided pieces of context, Denmark's estimated mean percentage of total population infected as of 28th March is 1.1% with a 95% credible interval.",
+      "latency_ms": 774.6162410003308,
+      "debug": {
+        "timings": {
+          "embed_query": 191,
+          "dpr": 6,
+          "seed_entities": 11,
+          "graph_iteration": 0,
+          "passage_scoring": 62,
+          "ppr": 49,
+          "total": 322
+        },
+        "active_entities": 0,
+        "graph_nodes": 50,
+        "graph_edges": 0
+      }
+    },
+    {
+      "question": "What is this disease  characterized by ?",
+      "answer": "",
+      "contexts": [
+        "Title: Lophodermium\nLophodermium is a genus of fungi within the family Rhytismataceae.\n The genus contains 145 species and has a global distribution.\n Species of this genus are usually observed producing zone lines, conidiomata and ascomata on dead fallen leaves, but at least some are known to colonize living leaves.\n In many cases they then live inside the colonized leaf as a symptomless endobiont, where they are regarded as detritivores utilising dead plant matter.\n In a few cases they may kill all or part of the leaf prematurely, and there is a substantial literature dealing with those species as plant pathogens.\n The genus infects many different plant families but with a notable concentration in the family Pinaceae; many \"Lophodermium\" species are restricted to a single host genus (or even species), but some, particularly those infecting grasses, may infect several genera.\n Some are economically important plant pathogens, such as those that cause needlecast disease in European Black Pine, Scots Pine and Red Pine in forestry and christmas tree plantations.\n In these species, notably \"L. pinastri\" and \"L. seditiosum\", the fungal spores disperse and infect the pine needles in late summer, which turn brown by the following spring and then fall off.",
+        "Title: Lophodermium\nLophodermium is a genus of fungi within the family Rhytismataceae.\n The genus contains 145 species and has a global distribution.\n Species of this genus are usually observed producing zone lines, conidiomata and ascomata on dead fallen leaves, but at least some are known to colonize living leaves.\n In many cases they then live inside the colonized leaf as a symptomless endobiont, where they are regarded as detritivores utilising dead plant matter.\n In a few cases they may kill all or part of the leaf prematurely, and there is a substantial literature dealing with those species as plant pathogens.\n The genus infects many different plant families but with a notable concentration in the family Pinaceae; many \"Lophodermium\" species are restricted to a single host genus (or even species), but some, particularly those infecting grasses, may infect several genera.\n Some are economically important plant pathogens, such as those that cause needlecast disease in European Black Pine, Scots Pine and Red Pine in forestry and christmas tree plantations.\n In these species, notably \"L. pinastri\" and \"L. seditiosum\", the fungal spores disperse and infect the pine needles in late summer, which turn brown by the following spring and then fall off.",
+        "Title: B\u00e9atrice Picard\nB\u00e9atrice Picard, {'1': \", '2': \", '3': \", '4': \"} , {'1': \", '2': \", '3': \", '4': \"} (born July 3, 1929 in Montreal, Quebec) is a Canadian actress.\n She is well known in Quebec for the countless roles she has played on the French Canadian theatre and television scene during an ongoing acting career spanning over six decades.\n She became a household name in Quebec for her acting role as Angelina Desmarais in one of the first French Canadian \"t\u00e9l\u00e9-roman\" series called \"Le survenant\" in the early days of French-speaking television.\n She then went on to a prolific career in televised comedies such as \"Cr\u00e9 Basil\" and \"Symphorien\".\n She also played in numerous theatre productions, summer plays, and films.\n Most recently, she is well known as the Quebec French voice of Marge Simpson in \"The Simpsons\".",
+        "Title: B\u00e9atrice Picard\nB\u00e9atrice Picard, {'1': \", '2': \", '3': \", '4': \"} , {'1': \", '2': \", '3': \", '4': \"} (born July 3, 1929 in Montreal, Quebec) is a Canadian actress.\n She is well known in Quebec for the countless roles she has played on the French Canadian theatre and television scene during an ongoing acting career spanning over six decades.\n She became a household name in Quebec for her acting role as Angelina Desmarais in one of the first French Canadian \"t\u00e9l\u00e9-roman\" series called \"Le survenant\" in the early days of French-speaking television.\n She then went on to a prolific career in televised comedies such as \"Cr\u00e9 Basil\" and \"Symphorien\".\n She also played in numerous theatre productions, summer plays, and films.\n Most recently, she is well known as the Quebec French voice of Marge Simpson in \"The Simpsons\".",
+        "Title: Sarod\nThe sarod (or sarode) (\u0938\u0930\u094b\u0926) is a stringed instrument of India, used mainly in Indian classical music.\n Along with the sitar, it is among the most popular and prominent instruments in Hindustani classical music.\n The sarod is known for a deep, weighty, introspective sound, in contrast with the sweet, overtone-rich texture of the sitar, with sympathetic strings that give it a resonant, reverberant quality.\n It is a fretless instrument able to produce the continuous slides between notes known as meend (glissandi), which are important in Indian music."
+      ],
+      "ground_truth": "The disease is characterized by symmetric proximal weakness, the presence of characteristic rashes, and other systemic features.",
+      "latency_ms": 757.3741220003285,
+      "debug": {
+        "timings": {
+          "embed_query": 180,
+          "dpr": 6,
+          "seed_entities": 8,
+          "graph_iteration": 0,
+          "passage_scoring": 66,
+          "ppr": 41,
+          "total": 301
+        },
+        "active_entities": 0,
+        "graph_nodes": 50,
+        "graph_edges": 0
+      }
+    },
+    {
+      "question": "What contributed to a large part of mammalian genomic sequence?",
+      "answer": "",
+      "contexts": [
+        "Title: Banksiamyces\nBanksiamyces is a genus of fungi in the order Helotiales, with a tentative placement in the family Helotiaceae.\n The genus contains four species, which grow on the seed follicles of the dead infructescences or \"cones\" of various species of \"Banksia\", a genus in the plant family Proteaceae endemic to Australia.\n Fruit bodies of the fungus appear as small (typically less than 10\u00a0mm diameter), shallow dark cups on the follicles of the \"Banksia\" fruit.\n The edges of dry fruit bodies fold inwards, appearing like narrow slits.\n The first specimens of \"Banksiamyces\", known then as \"Tympanis toomansis\", were described in 1887.\n Specimens continued to be collected occasionally for almost 100 years before becoming examined more critically in the early 1980s, leading to the creation of a new genus to contain what was determined to be three distinct species, \"B.\u00a0katerinae\", \"B.\u00a0macrocarpus\", and \"B.\u00a0toomansis\".\n A fourth species, \"B.\u00a0maccannii\", was added in 1984.",
+        "Title: Banksiamyces\nBanksiamyces is a genus of fungi in the order Helotiales, with a tentative placement in the family Helotiaceae.\n The genus contains four species, which grow on the seed follicles of the dead infructescences or \"cones\" of various species of \"Banksia\", a genus in the plant family Proteaceae endemic to Australia.\n Fruit bodies of the fungus appear as small (typically less than 10\u00a0mm diameter), shallow dark cups on the follicles of the \"Banksia\" fruit.\n The edges of dry fruit bodies fold inwards, appearing like narrow slits.\n The first specimens of \"Banksiamyces\", known then as \"Tympanis toomansis\", were described in 1887.\n Specimens continued to be collected occasionally for almost 100 years before becoming examined more critically in the early 1980s, leading to the creation of a new genus to contain what was determined to be three distinct species, \"B.\u00a0katerinae\", \"B.\u00a0macrocarpus\", and \"B.\u00a0toomansis\".\n A fourth species, \"B.\u00a0maccannii\", was added in 1984.",
+        " They hunt solo, in couples and rarely in packs.\n Since the 1980s the centre of Bakhmull breeding is in Russia, \"The Blue Dale el Bark Bakhmull\" Moscow, where they are spread all over the former Soviet Republics and various regions.\n The foundation stock was brought to Russia in the 70s by military men from Afghanistan.\n Breed Standard for tazi BAKHMULL (aboriginal Afghan Hound) was adopted in Moscow, Russia (since Russia has become the 2nd motherland of bakhmulls) first in 1985 and later after detailed elaboration in 1997 (RFOS-RKF).",
+        "Title: Bakhmull\nBakhmull is an Aboriginal Afghan Hound belonging to an ancient group of oriental sighthounds.\n The Afghan Royal Family were the only humans who possessed this breed.\n The bakhmull tazi (tazi means \" fast running sighthound\" ) is a long haired variety of sighthounds in Afghanistan.\n There are two more: Luchak tazi short haired like sloughi and Khalagh tazi with moderate long hair on ears, shoulders, elbows and thighs.Bakhmull tazi has developed in the mountain areas of Mid and Central Asia - ancient Punjab, Paunchala, \"Five river land\".\n This dog breed roots back presumably in the ancient Indian Harappa( Mohenjo Daro) civilization 2300 - 1700 B.C.\n If translated from Pashto (Afghan) the word \"bakhmull\" means \"velvet\" due to its incredible silky velvet, long, ivory color hair of the coat, rather abundant and long on the whole body, because it is a mountain oriental sighthound, except the \"saddle\", front parts of four legs and the muzzle.\n Its color is always fawn, ivory or white with a darker \"saddle\", thus it produces an impression of a fawn (yellowish) dog which coat color is protective khaki that matches sandstone and limestone of the Hindu Kush mountain landscape and deserts.\n Following colors are not permissible: red, red with white spots, black and black with white spots.\n Bakhmulls hunt the wild ram, ibex (wild mountain goat), hare, fox, wolf, jackal, wild big cats, in old times leopard, but never birds.\n They are also good guards; they guard homes and flocks of sheep.\n They hunt solo, in couples and rarely in packs.\n Since the 1980s the centre of Bakhmull breeding is in Russia, \"The Blue Dale el Bark Bakhmull\" Moscow, where they are spread all over the former Soviet Republics and various regions.\n The foundation stock was brought to Russia in the 70s by military men from Afghanistan.\n",
+        "Title: Pachyornis\nPachyornis is an extinct genus of ratites from New Zealand which belonged to the moa family.\n Like all ratites it was a member of the order Struthioniformes.\n The Struthioniformes are flightless birds with a sternum without a keel.\n They also have a distinctive palate.\n This genus contains three species, and are part of the Anomalopteryginae or lesser moa subfamily.\n \"Pachyornis\" moa were the stoutest and most heavy-legged genus of the family.\n The most notable species being \"Pachyornis elephantopus\" - the Heavy-Footed Moa.\n They were generally similar to the Eastern Moa or the Broad-billed moa of the genus \"Euryapteryx\", but differed in having a pointed bill and being more heavyset in general.\n At least one species (\"P. australis\") is assumed to have had a crest of long feathers on its head.\n The species became rapidly extinct following human colonization of New Zealand, with the possible exception of \"P. australis\", which may have already been extinct by then."
+      ],
+      "ground_truth": "The syntenic whole-genome alignments produced by the MULTIZ program contributed to a large part of the mammalian genomic sequence.",
+      "latency_ms": 660.7791759997781,
+      "debug": {
+        "timings": {
+          "embed_query": 93,
+          "dpr": 6,
+          "seed_entities": 7,
+          "graph_iteration": 0,
+          "passage_scoring": 50,
+          "ppr": 50,
+          "total": 207
+        },
+        "active_entities": 0,
+        "graph_nodes": 50,
+        "graph_edges": 0
+      }
+    },
+    {
+      "question": "What are the key factors preventing the elimination of HCV infection in some patients?",
+      "answer": "",
+      "contexts": [
+        "Title: Experimental hip hop\nExperimental hip hop, also known as abstract hip hop, is a genre of hip hop that employs structural elements typically considered unconventional in traditional hip hop music.\n Some notable experimental hip hop record labels include Definitive Jux, Anticon, Big Dada and Ninja Tune.\n While most experimental hip hop incorporates turntablism and is produced electronically, some artists have introduced acoustic elements to the music to facilitate it being performed live.",
+        "Title: Tom Clancy's Ghost Recon 2: Summit Strike\nTom Clancy's Ghost Recon 2: Summit Strike is the expansion to \"Tom Clancy's Ghost Recon 2\".\n There are several minor differences between \"Tom Clancy's Ghost Recon 2: Summit Strike\", and \"Tom Clancy's Ghost Recon 2\".\n The most notable being the difficulty, Summit Strike being regarded as the harder of the two.\n Other differences would include new multiplayer modes, such as Heli Hunt.",
+        "Title: Tom Clancy's Ghost Recon 2: Summit Strike\nTom Clancy's Ghost Recon 2: Summit Strike is the expansion to \"Tom Clancy's Ghost Recon 2\".\n There are several minor differences between \"Tom Clancy's Ghost Recon 2: Summit Strike\", and \"Tom Clancy's Ghost Recon 2\".\n The most notable being the difficulty, Summit Strike being regarded as the harder of the two.\n Other differences would include new multiplayer modes, such as Heli Hunt.",
+        "Title: Heathrow Airport\nHeathrow Airport (also known as London Heathrow) (IATA: LHR,\u00a0ICAO: EGLL) is a major international airport in London, United Kingdom.\n Heathrow is the second busiest airport in the world by international passenger traffic (surpassed by Dubai International in 2014), as well as the busiest airport in Europe by passenger traffic, and the seventh busiest airport in the world by total passenger traffic.\n In 2016, it handled a record 75.7 million passengers, a 1.0% increase from 2015.",
+        "Title: Heathrow Airport\nHeathrow Airport (also known as London Heathrow) (IATA: LHR,\u00a0ICAO: EGLL) is a major international airport in London, United Kingdom.\n Heathrow is the second busiest airport in the world by international passenger traffic (surpassed by Dubai International in 2014), as well as the busiest airport in Europe by passenger traffic, and the seventh busiest airport in the world by total passenger traffic.\n In 2016, it handled a record 75.7 million passengers, a 1.0% increase from 2015."
+      ],
+      "ground_truth": "The key factors preventing the elimination of HCV infection in some patients are the early functional inactivation of the HCV-specific CD4+ T cell response, differences in host immune responses, host genetic factors, and baseline and emergent resistance variants.",
+      "latency_ms": 641.5332090000447,
+      "debug": {
+        "timings": {
+          "embed_query": 84,
+          "dpr": 5,
+          "seed_entities": 11,
+          "graph_iteration": 0,
+          "passage_scoring": 45,
+          "ppr": 37,
+          "total": 183
+        },
+        "active_entities": 0,
+        "graph_nodes": 50,
+        "graph_edges": 0
+      }
+    },
+    {
+      "question": "Why  have bats received attention in recent years?",
+      "answer": "",
+      "contexts": [
+        " They hunt solo, in couples and rarely in packs.\n Since the 1980s the centre of Bakhmull breeding is in Russia, \"The Blue Dale el Bark Bakhmull\" Moscow, where they are spread all over the former Soviet Republics and various regions.\n The foundation stock was brought to Russia in the 70s by military men from Afghanistan.\n Breed Standard for tazi BAKHMULL (aboriginal Afghan Hound) was adopted in Moscow, Russia (since Russia has become the 2nd motherland of bakhmulls) first in 1985 and later after detailed elaboration in 1997 (RFOS-RKF).",
+        "Title: Banksiamyces\nBanksiamyces is a genus of fungi in the order Helotiales, with a tentative placement in the family Helotiaceae.\n The genus contains four species, which grow on the seed follicles of the dead infructescences or \"cones\" of various species of \"Banksia\", a genus in the plant family Proteaceae endemic to Australia.\n Fruit bodies of the fungus appear as small (typically less than 10\u00a0mm diameter), shallow dark cups on the follicles of the \"Banksia\" fruit.\n The edges of dry fruit bodies fold inwards, appearing like narrow slits.\n The first specimens of \"Banksiamyces\", known then as \"Tympanis toomansis\", were described in 1887.\n Specimens continued to be collected occasionally for almost 100 years before becoming examined more critically in the early 1980s, leading to the creation of a new genus to contain what was determined to be three distinct species, \"B.\u00a0katerinae\", \"B.\u00a0macrocarpus\", and \"B.\u00a0toomansis\".\n A fourth species, \"B.\u00a0maccannii\", was added in 1984.",
+        "Title: Banksiamyces\nBanksiamyces is a genus of fungi in the order Helotiales, with a tentative placement in the family Helotiaceae.\n The genus contains four species, which grow on the seed follicles of the dead infructescences or \"cones\" of various species of \"Banksia\", a genus in the plant family Proteaceae endemic to Australia.\n Fruit bodies of the fungus appear as small (typically less than 10\u00a0mm diameter), shallow dark cups on the follicles of the \"Banksia\" fruit.\n The edges of dry fruit bodies fold inwards, appearing like narrow slits.\n The first specimens of \"Banksiamyces\", known then as \"Tympanis toomansis\", were described in 1887.\n Specimens continued to be collected occasionally for almost 100 years before becoming examined more critically in the early 1980s, leading to the creation of a new genus to contain what was determined to be three distinct species, \"B.\u00a0katerinae\", \"B.\u00a0macrocarpus\", and \"B.\u00a0toomansis\".\n A fourth species, \"B.\u00a0maccannii\", was added in 1984.",
+        "Title: Pachyornis\nPachyornis is an extinct genus of ratites from New Zealand which belonged to the moa family.\n Like all ratites it was a member of the order Struthioniformes.\n The Struthioniformes are flightless birds with a sternum without a keel.\n They also have a distinctive palate.\n This genus contains three species, and are part of the Anomalopteryginae or lesser moa subfamily.\n \"Pachyornis\" moa were the stoutest and most heavy-legged genus of the family.\n The most notable species being \"Pachyornis elephantopus\" - the Heavy-Footed Moa.\n They were generally similar to the Eastern Moa or the Broad-billed moa of the genus \"Euryapteryx\", but differed in having a pointed bill and being more heavyset in general.\n At least one species (\"P. australis\") is assumed to have had a crest of long feathers on its head.\n The species became rapidly extinct following human colonization of New Zealand, with the possible exception of \"P. australis\", which may have already been extinct by then.",
+        "Title: Pachyornis\nPachyornis is an extinct genus of ratites from New Zealand which belonged to the moa family.\n Like all ratites it was a member of the order Struthioniformes.\n The Struthioniformes are flightless birds with a sternum without a keel.\n They also have a distinctive palate.\n This genus contains three species, and are part of the Anomalopteryginae or lesser moa subfamily.\n \"Pachyornis\" moa were the stoutest and most heavy-legged genus of the family.\n The most notable species being \"Pachyornis elephantopus\" - the Heavy-Footed Moa.\n They were generally similar to the Eastern Moa or the Broad-billed moa of the genus \"Euryapteryx\", but differed in having a pointed bill and being more heavyset in general.\n At least one species (\"P. australis\") is assumed to have had a crest of long feathers on its head.\n The species became rapidly extinct following human colonization of New Zealand, with the possible exception of \"P. australis\", which may have already been extinct by then."
+      ],
+      "ground_truth": "Bats have received attention in recent years due to their diversity, their potential as reservoirs for pathogens, and their interactions with humans and other animals, raising concerns about public health and disease ecology.",
+      "latency_ms": 735.9848780015454,
+      "debug": {
+        "timings": {
+          "embed_query": 182,
+          "dpr": 6,
+          "seed_entities": 14,
+          "graph_iteration": 0,
+          "passage_scoring": 42,
+          "ppr": 39,
+          "total": 286
+        },
+        "active_entities": 0,
+        "graph_nodes": 50,
+        "graph_edges": 0
+      }
+    },
+    {
+      "question": "What are examples of proinflammatory cytokines?",
+      "answer": "",
+      "contexts": [
+        "Title: Armageddon in Retrospect\nArmageddon in Retrospect is a collection of short stories and essays about war and peace written by Kurt Vonnegut.\n It is the first posthumous collection of his previously unpublished writings.\n The book includes an introduction by Mark Vonnegut, a letter from Kurt to his family about his experiences as an American prisoner of war in Nazi Germany, and the fire-bombing of Dresden.\n Like many of Vonnegut's other books, \"Armageddon in Retrospect\" is laden with handwritten quotations and rough drawings by the author.",
+        "Title: Sergei Kornilenko\nSergei Aleksandrovich Kornilenko (Belarusian: \u0421\u044f\u0440\u0433\u0435\u0439 \u0410\u043b\u044f\u043a\u0441\u0430\u043d\u0434\u0440\u0430\u0432\u0456\u0447 \u041a\u0430\u0440\u043d\u0456\u043b\u0435\u043d\u043a\u0430 ; Russian: \u0421\u0435\u0440\u0433\u0435\u0439 \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u0438\u0447 \u041a\u043e\u0440\u043d\u0438\u043b\u0435\u043d\u043a\u043e; born 14 June 1983) is a Belarusian professional footballer who plays as a striker for FC Krylia Sovetov Samara of the Russian Premier League.\n In Belarus, both Belarusian and Russian languages are official.\n Thus his name, usually transliterated as Sergei Kornilenko (Russian: \u0421\u0435\u0440\u0433\u0435\u0301\u0439 \u041a\u043e\u0440\u043d\u0438\u043b\u0435\u043d\u043a\u043e ), can be alternatively spelled as Syarhey Karnilenka (Belarusian: \u0421\u044f\u0440\u0433\u0435\u0439 \u041a\u0430\u0440\u043d\u0456\u043b\u0435\u043d\u043a\u0430 ).",
+        "Title: Sergei Kornilenko\nSergei Aleksandrovich Kornilenko (Belarusian: \u0421\u044f\u0440\u0433\u0435\u0439 \u0410\u043b\u044f\u043a\u0441\u0430\u043d\u0434\u0440\u0430\u0432\u0456\u0447 \u041a\u0430\u0440\u043d\u0456\u043b\u0435\u043d\u043a\u0430 ; Russian: \u0421\u0435\u0440\u0433\u0435\u0439 \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u0438\u0447 \u041a\u043e\u0440\u043d\u0438\u043b\u0435\u043d\u043a\u043e; born 14 June 1983) is a Belarusian professional footballer who plays as a striker for FC Krylia Sovetov Samara of the Russian Premier League.\n In Belarus, both Belarusian and Russian languages are official.\n Thus his name, usually transliterated as Sergei Kornilenko (Russian: \u0421\u0435\u0440\u0433\u0435\u0301\u0439 \u041a\u043e\u0440\u043d\u0438\u043b\u0435\u043d\u043a\u043e ), can be alternatively spelled as Syarhey Karnilenka (Belarusian: \u0421\u044f\u0440\u0433\u0435\u0439 \u041a\u0430\u0440\u043d\u0456\u043b\u0435\u043d\u043a\u0430 ).",
+        "Title: Tom Clancy's Net Force Explorers: High Wire\nTom Clancy's Net Force Explorers or Net Force Explorers is a series of young adult novels created by Tom Clancy and Steve Pieczenik as a spin-off of the military fiction series Tom Clancy's Net Force.",
+        "Title: Tom Clancy's Net Force Explorers: High Wire\nTom Clancy's Net Force Explorers or Net Force Explorers is a series of young adult novels created by Tom Clancy and Steve Pieczenik as a spin-off of the military fiction series Tom Clancy's Net Force."
+      ],
+      "ground_truth": "Examples of proinflammatory cytokines mentioned in the passages include MCP-1, TNF-\u03b1, IL-1\u03b2, IL-6, IL12p70, and IL-10.",
+      "latency_ms": 782.6377510009479,
+      "debug": {
+        "timings": {
+          "embed_query": 171,
+          "dpr": 5,
+          "seed_entities": 6,
+          "graph_iteration": 0,
+          "passage_scoring": 52,
+          "ppr": 37,
+          "total": 273
+        },
+        "active_entities": 0,
+        "graph_nodes": 50,
+        "graph_edges": 0
+      }
+    },
+    {
+      "question": "What are the most common methods of inhaled delivery of medications?",
+      "answer": "",
+      "contexts": [
+        "Title: Chennai International Airport\nChennai International Airport (IATA: MAA,\u00a0ICAO: VOMM) is an international airport serving the city of Chennai (Madras), Tamil Nadu, India and its metropolitan area.\n It is the fourth busiest airport in India in terms of total passenger traffic after airports at Delhi, Mumbai and Bengaluru.\n It is the 49th busiest airport in Asia for CY 2016.\n In the fiscal year 2016-17, the airport handled over 18.3 million passengers.\n Over 400 aircraft movements are handled by the airport per day.\n Third busiest Airport in terms of cargo handling in India.\n The planned extension of the terminals are about to start as the union government has told that Chennai might not get its new airport soon.",
+        "Title: Chennai International Airport\nChennai International Airport (IATA: MAA,\u00a0ICAO: VOMM) is an international airport serving the city of Chennai (Madras), Tamil Nadu, India and its metropolitan area.\n It is the fourth busiest airport in India in terms of total passenger traffic after airports at Delhi, Mumbai and Bengaluru.\n It is the 49th busiest airport in Asia for CY 2016.\n In the fiscal year 2016-17, the airport handled over 18.3 million passengers.\n Over 400 aircraft movements are handled by the airport per day.\n Third busiest Airport in terms of cargo handling in India.\n The planned extension of the terminals are about to start as the union government has told that Chennai might not get its new airport soon.",
+        "Title: Coimbatore International Airport\nCoimbatore International Airport (IATA: CJB,\u00a0ICAO: VOCB) is the primary airport serving the city of Coimbatore in Tamil Nadu.\n It is located at Peelamedu, about 13 km from the center of the city.\n Previously known as Peelamedu Civil Aerodrome, it is the 19th busiest airport in India in terms of passengers handled, 16th busiest in terms of total aircraft movement and 14th busiest in terms of cargo handled.\n The airport is the second largest airport in terms of passenger traffic and cargo after Chennai International Airport In Tamil Nadu.\n About five domestic and three international airlines serve the airport.\n The Airport also serves as a growing hub for Cargo transportation.",
+        "Title: Coimbatore International Airport\nCoimbatore International Airport (IATA: CJB,\u00a0ICAO: VOCB) is the primary airport serving the city of Coimbatore in Tamil Nadu.\n It is located at Peelamedu, about 13 km from the center of the city.\n Previously known as Peelamedu Civil Aerodrome, it is the 19th busiest airport in India in terms of passengers handled, 16th busiest in terms of total aircraft movement and 14th busiest in terms of cargo handled.\n The airport is the second largest airport in terms of passenger traffic and cargo after Chennai International Airport In Tamil Nadu.\n About five domestic and three international airlines serve the airport.\n The Airport also serves as a growing hub for Cargo transportation.",
+        "Title: Sarod\nThe sarod (or sarode) (\u0938\u0930\u094b\u0926) is a stringed instrument of India, used mainly in Indian classical music.\n Along with the sitar, it is among the most popular and prominent instruments in Hindustani classical music.\n The sarod is known for a deep, weighty, introspective sound, in contrast with the sweet, overtone-rich texture of the sitar, with sympathetic strings that give it a resonant, reverberant quality.\n It is a fretless instrument able to produce the continuous slides between notes known as meend (glissandi), which are important in Indian music."
+      ],
+      "ground_truth": "The most common methods of inhaled delivery of medications are metered dose inhalers (MDIs) and dry powder inhalers.",
+      "latency_ms": 737.6389349992678,
+      "debug": {
+        "timings": {
+          "embed_query": 181,
+          "dpr": 10,
+          "seed_entities": 10,
+          "graph_iteration": 0,
+          "passage_scoring": 46,
+          "ppr": 37,
+          "total": 285
+        },
+        "active_entities": 0,
+        "graph_nodes": 50,
+        "graph_edges": 0
+      }
+    },
+    {
+      "question": "What is the likely period of under-reporting?",
+      "answer": "",
+      "contexts": [
+        "Title: Le Livre noir du capitalisme\nLe Livre Noir du Capitalisme (\"The Black Book of Capitalism\") is a 1998 French book published in reaction to \"The Black Book of Communism\".\n Unlike the latter work, \"Le Livre Noir du Capitalisme\"'s primary goal is not to try to attribute a number of victims to the political system in question.\n Rather, the body of the book is composed of a series of independent works from various writers who each voice their critique on the various aspects of capitalism.\n Topics covered range from the African slave trade to the effects of globalization.",
+        "Title: Le Livre noir du capitalisme\nLe Livre Noir du Capitalisme (\"The Black Book of Capitalism\") is a 1998 French book published in reaction to \"The Black Book of Communism\".\n Unlike the latter work, \"Le Livre Noir du Capitalisme\"'s primary goal is not to try to attribute a number of victims to the political system in question.\n Rather, the body of the book is composed of a series of independent works from various writers who each voice their critique on the various aspects of capitalism.\n Topics covered range from the African slave trade to the effects of globalization.",
+        "Title: Black Book (World War II)\nThe Black Book: The Ruthless Murder of Jews by German-Fascist Invaders Throughout the Temporarily-Occupied Regions of the Soviet Union and in the German Nazi Death Camps established on occupied Polish soil during the War 1941\u20131945 alternatively The Black Book of the Holocaust, or simply The Black Book (Russian: \u0427\u0451\u0440\u043d\u0430\u044f \u041a\u043d\u0438\u0433\u0430 , \"Chornaya Kniga\"; Yiddish: \u05d3\u05d0\u05b8\u05e1 \u05e9\u05d5\u05d5\u05d0\u05b7\u05e8\u05e6\u05e2 \u05d1\u05d5\u05da\u200e , \"Dos shvartse bukh\"), was a result of the collaborative effort by the Jewish Anti-Fascist Committee (JAC) and members of the American Jewish community to document the anti-Jewish crimes of the Holocaust and the participation of Jews in the fighting and the resistance movement against the Nazis during World War II.",
+        "Title: Black Book (World War II)\nThe Black Book: The Ruthless Murder of Jews by German-Fascist Invaders Throughout the Temporarily-Occupied Regions of the Soviet Union and in the German Nazi Death Camps established on occupied Polish soil during the War 1941\u20131945 alternatively The Black Book of the Holocaust, or simply The Black Book (Russian: \u0427\u0451\u0440\u043d\u0430\u044f \u041a\u043d\u0438\u0433\u0430 , \"Chornaya Kniga\"; Yiddish: \u05d3\u05d0\u05b8\u05e1 \u05e9\u05d5\u05d5\u05d0\u05b7\u05e8\u05e6\u05e2 \u05d1\u05d5\u05da\u200e , \"Dos shvartse bukh\"), was a result of the collaborative effort by the Jewish Anti-Fascist Committee (JAC) and members of the American Jewish community to document the anti-Jewish crimes of the Holocaust and the participation of Jews in the fighting and the resistance movement against the Nazis during World War II.",
+        "Title: Black Book (non-standard disc format)\nBlack Book is an unofficial designation of optical disc (OD) formats that defy official standards for CD, DVD, HD DVD and Blu-ray Discs. Most formats considered Black Book are formats used for video games or Digital Rights Management."
+      ],
+      "ground_truth": "Based on the information provided, the likely period of under-reporting is during the initial stages of the outbreak, as there is a mention of considering various schemes of underreporting and the possibility of overreporting, which suggests that the reporting patterns were not accurate at the beginning of the outbreak.",
+      "latency_ms": 939.7063669985073,
+      "debug": {
+        "timings": {
+          "embed_query": 88,
+          "dpr": 5,
+          "seed_entities": 6,
+          "graph_iteration": 0,
+          "passage_scoring": 44,
+          "ppr": 40,
+          "total": 184
+        },
+        "active_entities": 0,
+        "graph_nodes": 50,
+        "graph_edges": 0
+      }
+    },
+    {
+      "question": "One way to understand the impact of interventions?",
+      "answer": "",
+      "contexts": [
+        "Title: Le Livre noir du capitalisme\nLe Livre Noir du Capitalisme (\"The Black Book of Capitalism\") is a 1998 French book published in reaction to \"The Black Book of Communism\".\n Unlike the latter work, \"Le Livre Noir du Capitalisme\"'s primary goal is not to try to attribute a number of victims to the political system in question.\n Rather, the body of the book is composed of a series of independent works from various writers who each voice their critique on the various aspects of capitalism.\n Topics covered range from the African slave trade to the effects of globalization.",
+        "Title: Le Livre noir du capitalisme\nLe Livre Noir du Capitalisme (\"The Black Book of Capitalism\") is a 1998 French book published in reaction to \"The Black Book of Communism\".\n Unlike the latter work, \"Le Livre Noir du Capitalisme\"'s primary goal is not to try to attribute a number of victims to the political system in question.\n Rather, the body of the book is composed of a series of independent works from various writers who each voice their critique on the various aspects of capitalism.\n Topics covered range from the African slave trade to the effects of globalization.",
+        "Title: Claudia Durst Johnson\nClaudia Durst Johnson is a literary scholar best known for her work on the novel \"To Kill a Mockingbird\", introducing the idea of the novel's gothicism and gothic satire.\n In the process of her research she befriended the author, Harper Lee.\n When the city of Chicago organized a One City One Book program in 2001 based on \"To Kill a Mockingbird\", Lee was unavailable to speak, so Johnson was invited to Chicago to present the book to the city.",
+        "Title: Experimental hip hop\nExperimental hip hop, also known as abstract hip hop, is a genre of hip hop that employs structural elements typically considered unconventional in traditional hip hop music.\n Some notable experimental hip hop record labels include Definitive Jux, Anticon, Big Dada and Ninja Tune.\n While most experimental hip hop incorporates turntablism and is produced electronically, some artists have introduced acoustic elements to the music to facilitate it being performed live.",
+        "Title: Heathrow Airport\nHeathrow Airport (also known as London Heathrow) (IATA: LHR,\u00a0ICAO: EGLL) is a major international airport in London, United Kingdom.\n Heathrow is the second busiest airport in the world by international passenger traffic (surpassed by Dubai International in 2014), as well as the busiest airport in Europe by passenger traffic, and the seventh busiest airport in the world by total passenger traffic.\n In 2016, it handled a record 75.7 million passengers, a 1.0% increase from 2015."
+      ],
+      "ground_truth": "One way to understand the impact of interventions is to estimate the number of infections and see how interventions affect the outcome. Another way is to analyze the effects of different interventions when used as the only covariate in the model.",
+      "latency_ms": 625.9952170003089,
+      "debug": {
+        "timings": {
+          "embed_query": 79,
+          "dpr": 6,
+          "seed_entities": 6,
+          "graph_iteration": 0,
+          "passage_scoring": 60,
+          "ppr": 38,
+          "total": 190
+        },
+        "active_entities": 0,
+        "graph_nodes": 50,
+        "graph_edges": 0
+      }
+    },
+    {
+      "question": "What CNS functions are changed by mutations in the KATNAL1 gene?",
+      "answer": "",
+      "contexts": [
+        "Title: Calibanus\nCalibanus is a genus of two species of flowering plants, both evergreen succulents from dry areas of northeastern Mexico.\n The APG III classification system places it in the family Asparagaceae, subfamily Nolinoideae (formerly the family Ruscaceae. )\n It was formerly included in the Agavaceae (now Agavoideae) but is now separated from them, for it is polycarpic and dioecious.\n Its name refers to the monster Caliban, an antagonist in Shakespeare's \"The Tempest\".",
+        "Title: Calibanus\nCalibanus is a genus of two species of flowering plants, both evergreen succulents from dry areas of northeastern Mexico.\n The APG III classification system places it in the family Asparagaceae, subfamily Nolinoideae (formerly the family Ruscaceae. )\n It was formerly included in the Agavaceae (now Agavoideae) but is now separated from them, for it is polycarpic and dioecious.\n Its name refers to the monster Caliban, an antagonist in Shakespeare's \"The Tempest\".",
+        "Title: Sergei Kornilenko\nSergei Aleksandrovich Kornilenko (Belarusian: \u0421\u044f\u0440\u0433\u0435\u0439 \u0410\u043b\u044f\u043a\u0441\u0430\u043d\u0434\u0440\u0430\u0432\u0456\u0447 \u041a\u0430\u0440\u043d\u0456\u043b\u0435\u043d\u043a\u0430 ; Russian: \u0421\u0435\u0440\u0433\u0435\u0439 \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u0438\u0447 \u041a\u043e\u0440\u043d\u0438\u043b\u0435\u043d\u043a\u043e; born 14 June 1983) is a Belarusian professional footballer who plays as a striker for FC Krylia Sovetov Samara of the Russian Premier League.\n In Belarus, both Belarusian and Russian languages are official.\n Thus his name, usually transliterated as Sergei Kornilenko (Russian: \u0421\u0435\u0440\u0433\u0435\u0301\u0439 \u041a\u043e\u0440\u043d\u0438\u043b\u0435\u043d\u043a\u043e ), can be alternatively spelled as Syarhey Karnilenka (Belarusian: \u0421\u044f\u0440\u0433\u0435\u0439 \u041a\u0430\u0440\u043d\u0456\u043b\u0435\u043d\u043a\u0430 ).",
+        "Title: Cairnburgh Castle\nCairnburgh Castle is a ruined castle that is located on the islands of Cairn na Burgh M\u00f2r and Cairn na Burgh Beag, Argyll and Bute, Scotland.\n These islands are at the northern extremity of the Treshnish Isles at the mouth of Loch Tuath, Mull north of Iona.\n 1991's \"The Changing Scottish Landscape\" characterizes it as \"one of the most isolated fortifications in Britain...[and] also one of the strangest.\"",
+        "Title: Cairnburgh Castle\nCairnburgh Castle is a ruined castle that is located on the islands of Cairn na Burgh M\u00f2r and Cairn na Burgh Beag, Argyll and Bute, Scotland.\n These islands are at the northern extremity of the Treshnish Isles at the mouth of Loch Tuath, Mull north of Iona.\n 1991's \"The Changing Scottish Landscape\" characterizes it as \"one of the most isolated fortifications in Britain...[and] also one of the strangest.\""
+      ],
+      "ground_truth": "Mutations in the KATNAL1 gene lead to changes in neuronal migration, neuronal morphology, and ependymal ciliary function, resulting in behavioral deficits including in learning and memory, reaction to anxiogenic situations, and circadian rhythms.",
+      "latency_ms": 628.4689069998421,
+      "debug": {
+        "timings": {
+          "embed_query": 93,
+          "dpr": 6,
+          "seed_entities": 10,
+          "graph_iteration": 0,
+          "passage_scoring": 40,
+          "ppr": 39,
+          "total": 189
+        },
+        "active_entities": 0,
+        "graph_nodes": 50,
+        "graph_edges": 0
+      }
+    }
+  ]
+}

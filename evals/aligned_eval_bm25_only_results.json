@@ -1,0 +1,98 @@
+[
+  {
+    "question": "What does pgvector provide?",
+    "answer": "",
+    "contexts": [],
+    "ground_truth": "pgvector provides vector similarity search in PostgreSQL."
+  },
+  {
+    "question": "What are the two main components of RAG?",
+    "answer": "",
+    "contexts": [],
+    "ground_truth": "The two main components of RAG are retrieval and generation."
+  },
+  {
+    "question": "How does graph_lite improve retrieval?",
+    "answer": "",
+    "contexts": [],
+    "ground_truth": "graph_lite improves retrieval by traversing neighboring nodes in a knowledge graph to find related context that might be missed by simple vector similarity."
+  },
+  {
+    "question": "How does FastAPI handle dependency injection?",
+    "answer": "",
+    "contexts": [],
+    "ground_truth": "FastAPI handles dependency injection using the Depends function."
+  },
+  {
+    "question": "What is Deepseek Coder?",
+    "answer": "",
+    "contexts": [],
+    "ground_truth": "Deepseek Coder is a model specifically trained for programming and code generation tasks."
+  },
+  {
+    "question": "Why use a vector database?",
+    "answer": "",
+    "contexts": [],
+    "ground_truth": "A vector database is used to efficiently store and query high-dimensional embeddings for similarity search."
+  },
+  {
+    "question": "What is the capital of the country where the Eiffel Tower is located?",
+    "answer": "",
+    "contexts": [],
+    "ground_truth": "Paris"
+  },
+  {
+    "question": "Who directed the movie in which Leonardo DiCaprio plays Cobb?",
+    "answer": "",
+    "contexts": [],
+    "ground_truth": "Christopher Nolan"
+  },
+  {
+    "question": "What is the atomic number of the element that makes up most of the Earth's atmosphere?",
+    "answer": "",
+    "contexts": [],
+    "ground_truth": "7"
+  },
+  {
+    "question": "Who was the president of the US when the first iPhone was released?",
+    "answer": "",
+    "contexts": [],
+    "ground_truth": "George W. Bush"
+  },
+  {
+    "question": "What is the chemical formula for the compound that covers 71 percent of the Earth's surface?",
+    "answer": "",
+    "contexts": [],
+    "ground_truth": "H2O"
+  },
+  {
+    "question": "What sport does the athlete who won the 2022 FIFA World Cup play?",
+    "answer": "",
+    "contexts": [],
+    "ground_truth": "Football (Soccer)"
+  },
+  {
+    "question": "What is the currency of the country that has the largest population in the world as of 2023?",
+    "answer": "",
+    "contexts": [],
+    "ground_truth": "Indian rupee"
+  },
+  {
+    "question": "Who wrote the play that features the characters Romeo and Juliet?",
+    "answer": "",
+    "contexts": [],
+    "ground_truth": "William Shakespeare"
+  },
+  {
+    "question": "What is the primary language spoken in the city where the Colosseum is located?",
+    "answer": "",
+    "contexts": [],
+    "ground_truth": "Italian"
+  },
+  {
+    "question": "What planet is known as the Red Planet, and how many moons does it have?",
+    "answer": "",
+    "contexts": [],
+    "ground_truth": "Mars, and it has 2 moons."
+  }
+]
